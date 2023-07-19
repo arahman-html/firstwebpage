@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration</title>
+    <style>
+      img {
+        width: 180px;
+        float: left;
+      }
+      p {
+        background-color: green;
+        color: azure;
+        line-height: 300%;
+        width: 1200px;
+        padding: 0;
+        margin: 0;
+      }
+      p#name {
+        font-size: larger;
+        font-weight: bold;
+        height: 40px;
+        margin: 0;
+      }
+      p#date {
+        font-size: smaller;
+        color: black;
+        margin: 0;
+      }
+      p#Object {
+        color: yellow;
+        height: 40px;
+      }
+
+      h2 {
+        padding: 0;
+      }
+      h5 {
+        color: red;
+      }
+    </style>
+  </head>
+  <img src="image /Unknown.jpeg" />
+  <body>
+    <p align="center" id="name">বাংলাদেশ জুডিসিয়াল সার্ভিস এসোসিয়েশন</p>
+    <p align="center" id="Object">মহামান্য রাষ্ট্রপতির সংবর্ধনা অনুষ্ঠান</p>
+    <p align="center" id="date">
+      তারিখঃ ২৮ জুলাই ২০২৩ খ্রিঃ, স্থানঃ বঙ্গবন্ধু আন্তর্জাতিক সম্মেলন কেন্দ্র।
+    </p>
+
+    <h2 align="center">
+      <div>
+        <a href="Registration.html"
+          >আদালত ও ট্রাইব্যুনালের বিচারকগণের রেজিস্ট্রেশন</a
+        >
+      </div>
+      &emsp; &emsp; &ensp;
+      <div>
+        <a href="form.html">প্রেষণে বিচারকগণের রেজিস্ট্রেশন</a>
+      </div>
+    </h2>
+    <h5 align="center">
+      *** জেলা লিগ্যাল এইড অফিসার এবং জেলার বিদ্যুৎ ম্যাজিস্ট্রেটগণ জেলা আদালতের
+      ফরম পূরণ করবেন
+    </h5>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

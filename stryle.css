@@ -116,11 +116,11 @@ body {
   }
 
   .link{color: white; float: right; margin-right: 60px; margin-top: 50px;}
-  a#links{color: rgb(128, 213, 16);}
-  h3{padding: 0; margin: 0; color: rgb(162, 5, 5)}
+  a#links{color: rgb(224, 209, 7);}
+  h3{padding: 0; margin: 0; color: rgb(248, 244, 244)}
 
   ul.dropdown{display: none;/*Initially hide the dropdown*/}
 
 
   /* Media Query for Mobile View */
-  @media screen and (max-width: 768px)
+  @media screen and (max-width: 768px).image-container{width: 100%%;}

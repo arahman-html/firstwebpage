@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reply Message Example</title>
+  </head>
+  <body>
+    <h1>Reply Message Example</h1>
+
+    <div>
+      <h2>User's Message:</h2>
+      <p id="userMessage">No message yet.</p>
+    </div>
+
+    <div>
+      <h2>Reply Message:</h2>
+      <p id="replyMessage">No reply yet.</p>
+    </div>
+
+    <form onsubmit="handleFormSubmission(event)">
+      <label for="userInput">Enter your message:</label>
+      <input type="text" id="userInput" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      function handleFormSubmission(event) {
+        event.preventDefault();
+        const userInput = document.getElementById("userInput").value;
+        const replyMessage = getReply(userInput);
+        document.getElementById("userMessage").innerText = userInput;
+        document.getElementById("replyMessage").innerText = replyMessage;
+        document.getElementById("userInput").value = "";
+      }
+
+      function getReply(userInput) {
+        // Replace this function with your logic to generate the reply message.
+        // For this example, we'll return a simple fixed reply.
+        return "Thank you for your message! We'll get back to you soon.";
+      }
+    </script>
+  </body>
+</html>

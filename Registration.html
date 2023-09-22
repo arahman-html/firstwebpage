@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Here</title>
+<style>
+    body{height: 100vh;align-items: center;display: flex;justify-content: center;  width: 100vh;background-image: url("ppp.jpg");background-repeat: no-repeat; height: 100vh; background-size: cover;}
+    input#name{width: 300px; height: 20px;} label{color: rgb(31, 238, 76);}span{color: aliceblue;} h1{color: aqua;} input#submit{color: white; background-color: blueviolet; height: 30px; width: 100px;}
+input#mobile{width: 200px; height: 20px;}input#email{width: 200px; height: 20px;}
+input#ID{width: 200px; height: 20px;}
+div#Division{width: 200px; height: 20px;}
+</style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="register"> 
+            <h1>Register Here</h1> 
+            <form id="register">
+                <label> Name </label>
+                <br>
+                <input type="text" name="name" id="name" placeholder="Your Name">
+                <br><br>
+            
+                <label> Designation </label>
+                <br>
+                <input type="text" name="Designation" id="name" placeholder="Your Designation">
+                <br><br>
+
+                <label> Service ID </label>
+                <br>
+                <input type="number" name="ID" id="ID" placeholder="Your Service ID">
+                <br><br>
+            
+                <label> Division </label>
+                <div class="custom-select"> <select> 
+                    <option value="">Dhaka</option> 
+                    <option value="">Barishal</option>
+                    <option value="">Khulna</option>
+                    <option value="">Rajshahi</option> 
+                    <option value="">Sylhet</option>
+                    <option value="">Maymanshing</option>
+                    <option value="">Rangpur</option>
+                    <option value="">Chattagram</option>
+                </select><span class="custom-arrow"></span>
+                </div>
+                <br>
+                <label> District </label>
+                <br>
+                <div class="custom-select"> <select> 
+                    <option value="">Dhaka</option> 
+                    <option value="">Barishal</option>
+                    <option value="">Khulna</option>
+                    <option value="">Rajshahi</option> 
+                    <option value="">Barguna</option>
+                    <option value="">Gazipur</option>
+                </select><span class="custom-arrow"></span>
+                </div>
+                <br>
+                    <label>Mobile:</label>
+                    <input type="number" name="" id="mobile" placeholder="Your Mobile Number">
+                    <br><br>
+                    <label>Email:</label>
+                    <input type="email" name="" id="email" placeholder="Your email address">
+                
+
+                <br><br>
+                <label>Are you coming with your Personal vahicle?</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="answer" id="yes">
+                &nbsp;
+                <span id="Yes">Yes</span>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="answer" id="no">
+                &nbsp;
+                <span id="no">No</span>
+                <br><br>
+
+                <label>Are coming with gunman?</label>
+                <br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="answer" id="yes">
+                &nbsp;
+                <span id="yes">Yes</span>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="answer" id="no">
+                &nbsp;
+                <span id="no">No</span>
+                <br><br>
+
+                <label>Upload Your Photo (maximum 1mb)</label>
+                <br>
+                <input class="file-upload-input" type="file" onchange="ReadURL(this)" accept="image/*">
+                <br><br>
+
+                <input type="submit" value="Register" name="submit" id="submit">
+
+            </form>
+
+
+        </div !--end register-->
+    </div!--end main-->
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <header>
+        <div class="name-container">
+          <h1>Bangladesh Judicial Service Association</h1>
+          <header>
+    
+  <head>
+  <body>
+  <div class="galleryImages">
+    <div class="image-container">
+      <img src="bjsapic.jpeg" alt=""id="expanded-image"/>
+      <img src="CJ sir-1.jpeg" alt=""id="expanded-image"/>
+      <img src="CJ sir-6.jpeg" alt=""id="expanded-image"/>
+      <img src="CJ sir-2.jpeg" alt="Photo 4"id="expanded-image"/>
+      <img src="CJ sir-3.jpeg" alt="Photo 5"id="expanded-image"/>
+      <img src="CJ sir-4.jpeg" alt="Photo 6"id="expanded-image"/>
+      <img src="CJ sir-5.jpeg" alt="Photo 7"id="expanded-image"/>
+    </div>
+  </div>
+
+
+<script>
+    // Get all images in the gallery
+    const galleryImages = document.querySelectorAll('.gallery img');
+
+    // Get the larger image container and image element
+    const imageContainer = document.getElementById('image-container');
+    const expandedImage = document.getElementById('expanded-image');
+
+    // Loop through each gallery image and attach a click event listener
+    galleryImages.forEach((image) => {
+        image.addEventListener('click', () => {
+            // Get the source and alt attributes of the clicked thumbnail
+            const thumbnailSrc = image.getAttribute('src');
+            const thumbnailAlt = image.getAttribute('alt');
+
+            // Update the source and alt attributes of the expanded image
+            expandedImage.src = thumbnailSrc;
+            expandedImage.alt = thumbnailAlt;
+
+            // Show the larger image container
+            imageContainer.style.display = 'block';
+        });
+    });
+
+    // Close the larger image view when clicking outside the image
+    imageContainer.addEventListener('click', (event) => {
+        if (event.target === imageContainer) {
+            imageContainer.style.display = 'none';
+        }
+    });
+</script>
+    
+<style>
+    header {
+  background-color: #024b12;
+  color: #fff;
+  padding: 10px 0;
+text-align: center;
+}
+
+header h1 {
+  margin:0;
+  padding:0;
+}
+    .photo-album {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(233, 223, 223, 0.7);
+      text-align: center;
+      z-index: 999;
+    }
+
+    .image-container img {
+      max-width: 50%;
+      max-height: 100%;
+      margin-top: 1%;
+    }
+  </style>
+</body>
+</head>
+</html>
+

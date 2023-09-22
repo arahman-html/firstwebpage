@@ -183,5 +183,16 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script>
+      // JavaScript for Image Gallery
+      const images = document.querySelectorAll(".gallery img");
+
+      images.forEach((image) => {
+        image.addEventListener("click", () => {
+          // Open a larger version of the clicked image in a new window/tab
+          window.open(image.src, "_blank");
+        });
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+      /* CSS for Image Gallery */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+      }
+
+      .gallery img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.2s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="CJ sir-1.jpeg" alt="Image 1" />
+      <img src="CJ sir-2.jpeg" alt="Image 2" />
+      <img src="CJ sir-3.jpeg" alt="Image 3" />
+      <!-- Add more images as needed -->
+    </div>
+
+    <script>
+      // JavaScript for Image Gallery
+      const images = document.querySelectorAll(".gallery img");
+
+      images.forEach((image) => {
+        image.addEventListener("click", () => {
+          // Open a larger version of the clicked image in a new window/tab
+          window.open(image.src, "_blank");
+        });
+      });
+    </script>
+  </body>
+</html>
